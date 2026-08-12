@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー | 忘却の迷宮 - REMNIA -</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+                 "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.8;
+    color: #2b2b2b;
+    background: #fafafa;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 1.6em;
+    border-bottom: 2px solid #2b2b2b;
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+  }
+  h2 {
+    font-size: 1.2em;
+    margin-top: 2.2em;
+    border-left: 4px solid #8a6d3b;
+    padding-left: 10px;
+  }
+  h3 {
+    font-size: 1.05em;
+    margin-top: 1.6em;
+  }
+  .meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 2em;
+  }
+  ul, ol {
+    padding-left: 1.4em;
+  }
+  a {
+    color: #8a6d3b;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+  }
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  th, td {
+    padding: 8px 12px;
+    text-align: left;
+  }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-size: 0.9em;
+  }
+  footer {
+    margin-top: 4em;
+    padding-top: 1.5em;
+    border-top: 1px solid #ddd;
+    color: #888;
+    font-size: 0.85em;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a class="back-link" href="index.html">&larr; トップに戻る</a>
+
+<h1>プライバシーポリシー</h1>
+<p class="meta">制定日：2026年8月12日<br>最終改定日：2026年8月12日</p>
+
+<p>miyax（以下「当方」といいます）は、モバイルゲーム「忘却の迷宮 - REMNIA -」（以下「本アプリ」といいます）における利用者（以下「ユーザー」といいます）の情報の取り扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます）を定めます。</p>
+
+<h2>1. 基本方針</h2>
+<p>本アプリは、<strong>アカウント登録（氏名・メールアドレス等の入力）なしで利用できる</strong>ことを基本設計としています。一方、ゲームの進行状況（スキル解放状況・記録帳・図鑑データ・記憶の欠片残高等、以下「ゲームデータ」といいます）は、端末固有の匿名IDに紐づけて<strong>外部クラウドサービス（Google Firebase）上に継続的に保存</strong>します。この匿名IDはユーザーの氏名・メールアドレス等の個人を特定する情報とは連携しておらず、当方がユーザー個人を特定することはできません。</p>
+
+<h2>2. 取得する情報</h2>
+
+<h3>2.1 ゲームデータ（匿名IDに紐づくクラウド保存）</h3>
+<p>本アプリの初回起動時、ユーザー操作を伴わず自動的に匿名認証（Firebase Authentication の Anonymous Auth）によって端末固有のIDを発行し、以下の情報をこのIDに紐づけて Firebase Firestore 上に保存します。</p>
+<ul>
+  <li>解放済みスキル・恒久強化の状況</li>
+  <li>記憶の欠片の残高</li>
+  <li>記録帳（累計撃破数・累計潜行回数・最深到達階等）</li>
+  <li>迷宮図鑑・記憶図鑑（武器/防具/手紙/鍵）の記録状況</li>
+  <li>解放済み二つ名の一覧</li>
+  <li>広告非表示パス等、有料アイテムの購入状態（フラグ）</li>
+  <li>次回潜行への持ち越しアイテムの一覧</li>
+</ul>
+<p>これらの情報は、氏名・メールアドレス等ユーザー個人を特定できる情報を含みません。ただし、端末固有の匿名IDに継続的に紐づく点で、後述する引き継ぎコード機能の有無にかかわらず<strong>当方のクラウド環境に永続的に保存される</strong>ことにご留意ください（アプリをアンインストールしても、Firebase上のデータ自体は自動的には削除されません）。</p>
+
+<h3>2.2 機種変更・データ引き継ぎ機能を利用した場合</h3>
+<p>ユーザーが設定画面から「引き継ぎコードを発行する」を操作した場合、2.1のゲームデータを、Firestore上の<code>transferCodes/&#123;code&#125;</code>という形式のコードに紐づけて一時的に保存します。このコードを別端末で「引き継ぎコードを復元する」に入力することで、ゲームデータを新しい端末の匿名IDに複製できます。</p>
+<p>このコードは、発行から24時間で自動的に削除され、それ以降は当該コードを用いてもアクセスできなくなります。</p>
+
+<h3>2.3 自動的に取得される情報（広告配信のため）</h3>
+<p>本アプリでは、無料でお楽しみいただくために、第三者の広告配信サービス（Google AdMob）を利用しています。このサービスは、広告の配信・効果測定のために以下のような情報を自動的に取得する場合があります。</p>
+<ul>
+  <li>広告識別子（IDFA/AAID等）</li>
+  <li>端末情報（OSバージョン、端末モデル等）</li>
+  <li>おおよその位置情報（国・地域レベル）</li>
+  <li>アプリの利用状況に関する情報</li>
+</ul>
+<p>本アプリでは、GDPR等に基づく同意管理プラットフォーム（UMP: User Messaging Platform）を用いた同意取得フォームを表示するほか、iOS 14以降では App Tracking Transparency（ATT）によるトラッキング許諾のリクエストを行います。ユーザーはこれらの画面で同意の可否を選択できます。</p>
+<p>これらの情報の取り扱いについては、Google AdMobのプライバシーポリシーもあわせてご確認ください。</p>
+<ul>
+  <li>Google AdMob: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+</ul>
+<p><strong>「広告非表示パス」購入後は広告配信自体を停止するため、これらの情報の取得も停止します。</strong></p>
+
+<h3>2.4 アプリの利用状況に関する情報（Firebase Analytics）</h3>
+<p>本アプリでは、アプリの改善・不具合調査のため、Google Firebase Analyticsを利用しています。これにより、画面の閲覧状況、機能の利用状況等、個人を特定しない統計的な利用データを取得する場合があります。</p>
+
+<h3>2.5 課金に関する情報</h3>
+<p>本アプリ内課金（記憶の欠片パック・温かい灯3個セット・広告非表示パスの購入）は、Apple App StoreまたはGoogle Playの決済システムを通じて行われます。<strong>当方はクレジットカード番号等の決済情報を直接取得・保存しません。</strong>購入の成立可否は、各プラットフォームが提供する購入検証の仕組みを通じてのみ確認します。</p>
+
+<h2>3. 情報の利用目的</h2>
+<p>取得した情報は、以下の目的にのみ利用します。</p>
+<ol>
+  <li>本アプリの機能（潜行の進行・記録帳・図鑑表示等）を提供するため</li>
+  <li>ユーザーが希望した場合の、機種変更時のデータ引き継ぎのため</li>
+  <li>広告の配信、広告効果の測定のため</li>
+  <li>不具合の調査、アプリの改善のため（Firebase Analyticsによる統計データを含む）</li>
+</ol>
+
+<h2>4. 第三者提供</h2>
+<p>当方は、法令に基づく場合を除き、取得した情報を本人の同意なく第三者に提供しません。ただし、前項の目的のため、以下の事業者に情報の取り扱いを委託する場合があります。</p>
+<ul>
+  <li>広告配信事業者（Google AdMob）</li>
+  <li>クラウドインフラ・分析ツール提供事業者（Google Firebase、Firebase Analyticsを含む）</li>
+</ul>
+
+<h2>5. 保存期間</h2>
+<ul>
+  <li>ゲームデータ（2.1）：匿名IDが有効である限り、Firebase Firestore上に継続的に保存されます。ユーザーがアプリをアンインストールしても、当方の判断で削除するまでクラウド上には残ります。</li>
+  <li>引き継ぎコード発行時の一時データ（2.2）：発行から24時間、または引き継ぎ完了後のいずれか早い時点で削除</li>
+</ul>
+
+<h2>6. ユーザーの権利</h2>
+<ul>
+  <li>ユーザーはいつでも、端末の設定からアプリの通知権限・広告のパーソナライズ設定を無効化できます</li>
+  <li>ユーザーはアプリをアンインストールすることで、端末内の一時データを削除できますが、前述の通りクラウド上のゲームデータは自動的には削除されません</li>
+  <li>アプリ内の設定画面から「アカウントデータを削除する」操作により、いつでもご自身でゲームデータを削除いただけます</li>
+</ul>
+
+<h2>7. 未成年者の利用について</h2>
+<p>本アプリは特定の年齢層を対象としたものではありませんが、未成年者が利用する場合は、保護者の同意のもとでご利用ください。</p>
+
+<h2>8. お問い合わせ窓口</h2>
+<p>本ポリシーに関するお問い合わせは、以下の窓口までご連絡ください。</p>
+<p>miyax<br>miyax.follow@gmail.com</p>
+
+<h2>9. 本ポリシーの変更</h2>
+<p>当方は、必要に応じて本ポリシーの内容を変更することがあります。重要な変更を行う場合は、アプリ内または本アプリの公式サポートページにて周知します。</p>
+
+<footer>
+  忘却の迷宮 - REMNIA -
+</footer>
+
+</div>
+</body>
+</html>
