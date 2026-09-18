@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | Remnia - Labyrinth of Oblivion</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+                 "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.8;
+    color: #2b2b2b;
+    background: #fafafa;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 1.6em;
+    border-bottom: 2px solid #2b2b2b;
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+  }
+  h2 {
+    font-size: 1.2em;
+    margin-top: 2.2em;
+    border-left: 4px solid #8a6d3b;
+    padding-left: 10px;
+  }
+  h3 {
+    font-size: 1.05em;
+    margin-top: 1.6em;
+  }
+  .meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 2em;
+  }
+  ul, ol {
+    padding-left: 1.4em;
+  }
+  a {
+    color: #8a6d3b;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+  }
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  th, td {
+    padding: 8px 12px;
+    text-align: left;
+  }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-size: 0.9em;
+  }
+  footer {
+    margin-top: 4em;
+    padding-top: 1.5em;
+    border-top: 1px solid #ddd;
+    color: #888;
+    font-size: 0.85em;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="back-link" href="index.html">&larr; Back to top</a>
+
+  <h1>Privacy Policy</h1>
+  <div class="meta">Effective date: August 12, 2026<br>Last updated: August 12, 2026</div>
+
+  <p>This is an English translation of the Japanese privacy policy for reference. If there is any discrepancy between this translation and the Japanese original, the <a href="privacy-policy.html">Japanese version</a> prevails.</p>
+
+  <p>miyax ("we", "us") sets out below how we handle information about users ("you") of the mobile game "Remnia - Labyrinth of Oblivion" (the "App").</p>
+
+  <h2>1. Basic approach</h2>
+  <p>The App is designed to be played without creating an account (no name, e-mail address or similar input is required). Your game progress — unlocked skills, permanent upgrades, the record log, codex data, your balance of memory shards and so on (the "Game Data") — is stored continuously on an external cloud service (Google Firebase), linked to an anonymous ID unique to your device. That anonymous ID is not linked to your name, e-mail address or any other information that identifies you, and we cannot identify you personally from it.</p>
+
+  <h2>2. Information we collect</h2>
+
+  <h3>2.1 Game Data (stored in the cloud under an anonymous ID)</h3>
+  <p>The first time you launch the App, an anonymous ID unique to your device is issued automatically, without any action on your part, through anonymous authentication (Firebase Authentication, Anonymous Auth). The following information is stored in Firebase Firestore under that ID:</p>
+  <ul>
+    <li>Unlocked skills and permanent upgrades</li>
+    <li>Your balance of memory shards</li>
+    <li>The record log (total enemies defeated, total dives, deepest floor reached and so on)</li>
+    <li>Progress in the bestiary and the memory codex (weapons, armour, letters, keys)</li>
+    <li>The list of titles you have unlocked</li>
+    <li>Purchase status of paid items, such as the ad-free pass (stored as a flag)</li>
+    <li>Items carried over to your next dive</li>
+  </ul>
+  <p>This information contains nothing that identifies you personally, such as your name or e-mail address. Please note, however, that because it is linked continuously to the anonymous ID of your device, it remains stored in our cloud environment regardless of whether you use the transfer code feature described below. <strong>Uninstalling the App does not automatically delete the data held on Firebase.</strong></p>
+
+  <h3>2.2 If you use the device transfer feature</h3>
+  <p>When you choose "Issue a transfer code" in the settings screen, the Game Data described in 2.1 is stored temporarily in Firestore under a code of the form <code>transferCodes/{code}</code>. Entering that code under "Restore from a transfer code" on another device copies the Game Data to the anonymous ID of the new device.</p>
+  <p>The code is deleted automatically 24 hours after it is issued; after that, the code can no longer be used to access the data.</p>
+
+  <h3>2.3 Information collected automatically (for advertising)</h3>
+  <p>So that the App can be offered free of charge, we use a third-party advertising service (Google AdMob). That service may automatically collect information such as the following in order to deliver ads and measure their performance:</p>
+  <ul>
+    <li>Advertising identifiers (IDFA, AAID and the like)</li>
+    <li>Device information (OS version, device model and so on)</li>
+    <li>Approximate location (country or region level)</li>
+    <li>Information about how the App is used</li>
+  </ul>
+  <p>The App presents a consent form through a Consent Management Platform (Google's User Messaging Platform) in accordance with the GDPR and similar regulations, and on iOS 14 and later it requests tracking permission through App Tracking Transparency (ATT). You can choose whether to consent on those screens.</p>
+  <p>For how this information is handled, please also see the Google AdMob privacy policy:</p>
+  <ul>
+    <li>Google AdMob: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  </ul>
+  <p>Once the "ad-free pass" has been purchased, advertising itself stops, and so does the collection of this information.</p>
+
+  <h3>2.4 Information about how the App is used (Firebase Analytics)</h3>
+  <p>We use Google Firebase Analytics to improve the App and investigate problems. It may collect statistical usage data that does not identify you, such as which screens are viewed and which features are used.</p>
+
+  <h3>2.5 Information relating to purchases</h3>
+  <p>In-app purchases (the memory shard pack, the set of three warm lights, and the ad-free pass) are processed through the payment systems of the Apple App Store or Google Play. We do not collect or store payment information such as credit card numbers. We confirm only whether a purchase completed, through the purchase verification mechanisms each platform provides.</p>
+
+  <h2>3. How we use the information</h2>
+  <p>We use the information we collect only for the following purposes:</p>
+  <ul>
+    <li>To provide the features of the App (running a dive, the record log, the codex screens and so on)</li>
+    <li>To transfer your data to a new device when you ask us to</li>
+    <li>To deliver advertising and measure its performance</li>
+    <li>To investigate problems and improve the App (including statistical data from Firebase Analytics)</li>
+  </ul>
+
+  <h2>4. Disclosure to third parties</h2>
+  <p>Except where required by law, we do not provide the information we collect to third parties without your consent. For the purposes set out above, however, we may entrust the handling of information to the following providers:</p>
+  <ul>
+    <li>Advertising provider (Google AdMob)</li>
+    <li>Cloud infrastructure and analytics providers (Google Firebase, including Firebase Analytics)</li>
+  </ul>
+
+  <h2>5. Retention</h2>
+  <ul>
+    <li>Game Data (2.1): stored continuously in Firebase Firestore for as long as the anonymous ID is valid. Even if you uninstall the App, it remains in the cloud until we delete it.</li>
+    <li>Temporary data created when a transfer code is issued (2.2): deleted 24 hours after issue, or when the transfer completes, whichever comes first.</li>
+  </ul>
+
+  <h2>6. Your rights</h2>
+  <ul>
+    <li>You can disable notification permissions and personalised advertising for the App at any time from your device settings.</li>
+    <li>Uninstalling the App deletes the temporary data held on your device, but, as noted above, it does not automatically delete the Game Data held in the cloud.</li>
+    <li>You can delete your Game Data yourself at any time using "Delete account data" in the App's settings screen.</li>
+  </ul>
+
+  <h2>7. Use by minors</h2>
+  <p>The App is not directed at any particular age group. If you are a minor, please use it with the consent of a parent or guardian.</p>
+
+  <h2>8. Contact</h2>
+  <p>For enquiries about this policy, please contact:</p>
+  <p>miyax<br>miyax.follow@gmail.com</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>We may change this policy as necessary. If we make a significant change, we will announce it in the App or on the App's official support page.</p>
+
+  <footer>
+    Remnia - Labyrinth of Oblivion
+  </footer>
+</div>
+</body>
+</html>
