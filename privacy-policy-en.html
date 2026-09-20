@@ -103,7 +103,7 @@
 
   <h3>2.2 If you use the device transfer feature</h3>
   <p>When you choose "Issue a transfer code" in the settings screen, the Game Data described in 2.1 is stored temporarily in Firestore under a code of the form <code>transferCodes/{code}</code>. Entering that code under "Restore from a transfer code" on another device copies the Game Data to the anonymous ID of the new device.</p>
-  <p>The code is deleted automatically 24 hours after it is issued; after that, the code can no longer be used to access the data.</p>
+  <p>The code expires 24 hours after it is issued. Once it has expired, the code can no longer be used to access the data. The code and the data linked to it are deleted when the transfer completes, or when a new code is issued from the same device. If neither happens, the data may remain in our cloud environment after the code has expired, although the code can no longer be used to access it.</p>
 
   <h3>2.3 Information collected automatically (for advertising)</h3>
   <p>So that the App can be offered free of charge, we use a third-party advertising service (Google AdMob). That service may automatically collect information such as the following in order to deliver ads and measure their performance:</p>
@@ -145,7 +145,7 @@
   <h2>5. Retention</h2>
   <ul>
     <li>Game Data (2.1): stored continuously in Firebase Firestore for as long as the anonymous ID is valid. Even if you uninstall the App, it remains in the cloud until we delete it.</li>
-    <li>Temporary data created when a transfer code is issued (2.2): deleted 24 hours after issue, or when the transfer completes, whichever comes first.</li>
+    <li>Temporary data created when a transfer code is issued (2.2): deleted when the transfer completes, or when a new code is issued from the same device. If neither happens, the code expires 24 hours after issue but the data may remain, although the code can no longer be used to access it.</li>
   </ul>
 
   <h2>6. Your rights</h2>
